@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTrack - Programming Checklists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>LearnTrack - Programming Checklists</h1>
+        <p>Select a programming language to view its learning path:</p>
+
+        <!-- Language Selection Dropdown -->
+        <select id="language-select">
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS">CSS</option>
+            <option value="SQL">SQL</option>
+        </select>
+
+        <!-- Timer Input and Display -->
+        <div class="timer-section">
+            <label for="time-input">Set Timer (minutes):</label>
+            <input type="number" id="time-input" value="25" min="1" max="120">
+            <button id="start-timer-btn">Start Timer</button>
+             <button id="pause-timer-btn">Pause Timer</button> <!-- Added Pause Button -->
+            <button id="reset-timer-btn">Reset Timer</button> <!-- Added Reset Button -->
+            <div id="timer-display">25:00</div>
+        </div>
+
+        <!-- Button to get the learning checklist -->
+        <button id="get-checklist-btn">Get Learning Path</button>
+
+        <!-- Display area for the learning checklist -->
+        <div id="checklist-display"></div>
+
+        <!-- Audio for the timer end sound -->
+        <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
